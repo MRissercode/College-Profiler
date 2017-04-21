@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F79855F1EAA4FE600D923DB /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F79855D1EAA4FE600D923DB /* Realm.framework */; };
+		3F7985601EAA4FE600D923DB /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3F79855D1EAA4FE600D923DB /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3F7985611EAA4FE600D923DB /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F79855E1EAA4FE600D923DB /* RealmSwift.framework */; };
+		3F7985621EAA4FE600D923DB /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3F79855E1EAA4FE600D923DB /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3FF0C0C11E48E5CD00A1824B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF0C0C01E48E5CD00A1824B /* AppDelegate.swift */; };
 		3FF0C0C31E48E5CD00A1824B /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF0C0C21E48E5CD00A1824B /* MasterViewController.swift */; };
 		3FF0C0C51E48E5CD00A1824B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF0C0C41E48E5CD00A1824B /* DetailViewController.swift */; };
@@ -16,10 +20,6 @@
 		3FF0C0D81E48E5CD00A1824B /* College_ProfileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF0C0D71E48E5CD00A1824B /* College_ProfileTests.swift */; };
 		3FF0C0E31E48E5CD00A1824B /* College_ProfileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF0C0E21E48E5CD00A1824B /* College_ProfileUITests.swift */; };
 		3FF0C0F11E48EADB00A1824B /* College.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF0C0F01E48EADB00A1824B /* College.swift */; };
-		3FF0C0FA1E4A3CCD00A1824B /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FF0C0F91E4A3CCD00A1824B /* Realm.framework */; };
-		3FF0C0FB1E4A3CCD00A1824B /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3FF0C0F91E4A3CCD00A1824B /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		3FF0C0FE1E4A3CD400A1824B /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FF0C0FD1E4A3CD400A1824B /* RealmSwift.framework */; };
-		3FF0C0FF1E4A3CD400A1824B /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3FF0C0FD1E4A3CD400A1824B /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,8 +46,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				3FF0C0FF1E4A3CD400A1824B /* RealmSwift.framework in Embed Frameworks */,
-				3FF0C0FB1E4A3CCD00A1824B /* Realm.framework in Embed Frameworks */,
+				3F7985621EAA4FE600D923DB /* RealmSwift.framework in Embed Frameworks */,
+				3F7985601EAA4FE600D923DB /* Realm.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -55,6 +55,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3F79855D1EAA4FE600D923DB /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		3F79855E1EAA4FE600D923DB /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
 		3FF0C0BD1E48E5CD00A1824B /* College Profile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "College Profile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FF0C0C01E48E5CD00A1824B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FF0C0C21E48E5CD00A1824B /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -70,8 +72,6 @@
 		3FF0C0E21E48E5CD00A1824B /* College_ProfileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = College_ProfileUITests.swift; sourceTree = "<group>"; };
 		3FF0C0E41E48E5CD00A1824B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3FF0C0F01E48EADB00A1824B /* College.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = College.swift; sourceTree = "<group>"; };
-		3FF0C0F91E4A3CCD00A1824B /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
-		3FF0C0FD1E4A3CD400A1824B /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,8 +79,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FF0C0FE1E4A3CD400A1824B /* RealmSwift.framework in Frameworks */,
-				3FF0C0FA1E4A3CCD00A1824B /* Realm.framework in Frameworks */,
+				3F7985611EAA4FE600D923DB /* RealmSwift.framework in Frameworks */,
+				3F79855F1EAA4FE600D923DB /* Realm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,8 +104,8 @@
 		3FF0C0B41E48E5CD00A1824B = {
 			isa = PBXGroup;
 			children = (
-				3FF0C0FD1E4A3CD400A1824B /* RealmSwift.framework */,
-				3FF0C0F91E4A3CCD00A1824B /* Realm.framework */,
+				3F79855D1EAA4FE600D923DB /* Realm.framework */,
+				3F79855E1EAA4FE600D923DB /* RealmSwift.framework */,
 				3FF0C0BF1E48E5CD00A1824B /* College Profile */,
 				3FF0C0D61E48E5CD00A1824B /* College ProfileTests */,
 				3FF0C0E11E48E5CD00A1824B /* College ProfileUITests */,
@@ -128,8 +128,8 @@
 			children = (
 				3FF0C0C01E48E5CD00A1824B /* AppDelegate.swift */,
 				3FF0C0C21E48E5CD00A1824B /* MasterViewController.swift */,
-				3FF0C0C41E48E5CD00A1824B /* DetailViewController.swift */,
 				3FF0C0F01E48EADB00A1824B /* College.swift */,
+				3FF0C0C41E48E5CD00A1824B /* DetailViewController.swift */,
 				3FF0C0C61E48E5CD00A1824B /* Main.storyboard */,
 				3FF0C0C91E48E5CD00A1824B /* Assets.xcassets */,
 				3FF0C0CB1E48E5CD00A1824B /* LaunchScreen.storyboard */,

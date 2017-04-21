@@ -8,6 +8,7 @@
 
 import UIKit
 import RealmSwift
+import SafariServices
 
 class MasterViewController: UITableViewController {
 
@@ -55,21 +56,25 @@ class MasterViewController: UITableViewController {
             textField.placeholder = "Location"
         }
         alert.addTextField { (textField) in
-            textField.placeholder = "Population"
+            textField.placeholder = "Size"
             textField.keyboardType = UIKeyboardType.numberPad
+        }
+        alert.addTextField { (textField) in
+            textField.placeholder = "Website"
         }
         let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
         alert.addAction(cancelAction)
         let insertAction = UIAlertAction(title: "Add", style: .default) { (action) in
             let collegeTextField = alert.textFields![0] as UITextField
             let locationTextField = alert.textFields![1] as UITextField
-            let populationTextField = alert.textFields![2] as UITextField
+            let sizeTextField = alert.textFields![2] as UITextField
+            let websiteTextField = alert.textFields![3] as UITextField
             guard let image = UIImage(named: collegeTextField.text!) else {
                 print("missing \(collegeTextField.text!) image")
                 return
             }
-            if let population = Int(populationTextField.text!) {
-                let college = College(name: collegeTextField.text!, location: locationTextField.text!, population: population, image: UIImagePNGRepresentation(image)!)
+            if let size = Int(sizeTextField.text!) {
+                let college = College(name: collegeTextField.text!, location: locationTextField.text!, size: size, image: UIImagePNGRepresentation(image)!, url: websiteTextField.text!)
                 self.objects.append(college)
                 try! self.realm.write {
                     self.realm.add(college)
