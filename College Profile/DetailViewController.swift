@@ -10,8 +10,7 @@ import UIKit
 import RealmSwift
 import SafariServices
 
-class DetailViewController: UIViewController, UIImagePickerControllerDelegate {
-
+class DetailViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     @IBOutlet weak var collegeTextField: UITextField!
     @IBOutlet weak var locationTextField: UITextField!
@@ -31,7 +30,7 @@ class DetailViewController: UIViewController, UIImagePickerControllerDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.configureView()
-        imagePicker.delegate = self as? UIImagePickerControllerDelegate & UINavigationControllerDelegate
+        imagePicker.delegate = self
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
@@ -69,6 +68,7 @@ class DetailViewController: UIViewController, UIImagePickerControllerDelegate {
             }
         }
     }
+    
     @IBAction func onTappedSafariWebpage(_ sender: UIButton) {
         let url = URL(string: websiteTextField.text!)
         let svc = SFSafariViewController(url: url!)
@@ -79,6 +79,6 @@ class DetailViewController: UIViewController, UIImagePickerControllerDelegate {
         imagePicker.sourceType = UIImagePickerControllerSourceType.photoLibrary
         present(imagePicker, animated: true, completion: nil)
     }
-
+    
 }
 
