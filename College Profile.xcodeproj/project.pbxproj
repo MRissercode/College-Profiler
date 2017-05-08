@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3F5419591EB79D6A0098E00B /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F5419581EB79D6A0098E00B /* Realm.framework */; };
-		3F54195A1EB79D6A0098E00B /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3F5419581EB79D6A0098E00B /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		3F54195C1EB79D730098E00B /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F54195B1EB79D730098E00B /* RealmSwift.framework */; };
-		3F54195D1EB79D730098E00B /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3F54195B1EB79D730098E00B /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3FD98C821EC0D1AD0069B953 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FD98C811EC0D1AD0069B953 /* Realm.framework */; };
+		3FD98C831EC0D1AD0069B953 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3FD98C811EC0D1AD0069B953 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3FD98C861EC0D1B80069B953 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FD98C851EC0D1B80069B953 /* RealmSwift.framework */; };
+		3FD98C871EC0D1B80069B953 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3FD98C851EC0D1B80069B953 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3FF0C0C11E48E5CD00A1824B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF0C0C01E48E5CD00A1824B /* AppDelegate.swift */; };
 		3FF0C0C31E48E5CD00A1824B /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF0C0C21E48E5CD00A1824B /* MasterViewController.swift */; };
 		3FF0C0C51E48E5CD00A1824B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF0C0C41E48E5CD00A1824B /* DetailViewController.swift */; };
@@ -40,14 +40,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		3F5419481EB799970098E00B /* Embed Frameworks */ = {
+		3FD98C841EC0D1AD0069B953 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				3F54195D1EB79D730098E00B /* RealmSwift.framework in Embed Frameworks */,
-				3F54195A1EB79D6A0098E00B /* Realm.framework in Embed Frameworks */,
+				3FD98C871EC0D1B80069B953 /* RealmSwift.framework in Embed Frameworks */,
+				3FD98C831EC0D1AD0069B953 /* Realm.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -55,8 +55,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		3F5419581EB79D6A0098E00B /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
-		3F54195B1EB79D730098E00B /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
+		3FD98C811EC0D1AD0069B953 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		3FD98C851EC0D1B80069B953 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
 		3FF0C0BD1E48E5CD00A1824B /* College Profile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "College Profile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FF0C0C01E48E5CD00A1824B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FF0C0C21E48E5CD00A1824B /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -79,8 +79,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F54195C1EB79D730098E00B /* RealmSwift.framework in Frameworks */,
-				3F5419591EB79D6A0098E00B /* Realm.framework in Frameworks */,
+				3FD98C861EC0D1B80069B953 /* RealmSwift.framework in Frameworks */,
+				3FD98C821EC0D1AD0069B953 /* Realm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,8 +104,8 @@
 		3FF0C0B41E48E5CD00A1824B = {
 			isa = PBXGroup;
 			children = (
-				3F54195B1EB79D730098E00B /* RealmSwift.framework */,
-				3F5419581EB79D6A0098E00B /* Realm.framework */,
+				3FD98C851EC0D1B80069B953 /* RealmSwift.framework */,
+				3FD98C811EC0D1AD0069B953 /* Realm.framework */,
 				3FF0C0BF1E48E5CD00A1824B /* College Profile */,
 				3FF0C0D61E48E5CD00A1824B /* College ProfileTests */,
 				3FF0C0E11E48E5CD00A1824B /* College ProfileUITests */,
@@ -166,7 +166,7 @@
 				3FF0C0B91E48E5CD00A1824B /* Sources */,
 				3FF0C0BA1E48E5CD00A1824B /* Frameworks */,
 				3FF0C0BB1E48E5CD00A1824B /* Resources */,
-				3F5419481EB799970098E00B /* Embed Frameworks */,
+				3FD98C841EC0D1AD0069B953 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -446,11 +446,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = YES;
+				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "College Profile/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "The.College-Profile";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -462,12 +465,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = YES;
+				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "College Profile/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "The.College-Profile";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
