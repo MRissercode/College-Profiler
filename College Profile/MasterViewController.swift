@@ -13,7 +13,7 @@ import SafariServices
 class MasterViewController: UITableViewController {
 
     var detailViewController: DetailViewController? = nil
-    var objects = [Any]()
+    var objects = [AnyObject]()
     let realm = try! Realm()
     lazy var colleges: Results<College> = {
         self.realm.objects(College.self)
