@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="H1p-Uh-vWS">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="H1p-Uh-vWS">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -111,12 +111,28 @@
                                     <action selector="onLibraryButtonTapped:" destination="JEX-9P-axG" eventType="touchUpInside" id="5uF-Qa-ksH"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6yC-yW-dpY">
+                                <rect key="frame" x="270" y="110" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="A6j-em-usP"/>
+                                    <constraint firstAttribute="width" constant="30" id="TPE-xR-LEK"/>
+                                </constraints>
+                                <state key="normal" title="Map"/>
+                                <connections>
+                                    <action selector="onTapLocateCollege:" destination="JEX-9P-axG" eventType="touchUpInside" id="vWb-fG-9Ff"/>
+                                </connections>
+                            </button>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="xBg-Uf-tig">
+                                <rect key="frame" x="16" y="395" width="343" height="264"/>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="oSL-6h-wZb" firstAttribute="top" secondItem="zdj-BE-7bZ" secondAttribute="bottom" constant="8" id="4K0-0k-u5N"/>
                             <constraint firstItem="UD7-7H-gQU" firstAttribute="centerX" secondItem="svH-Pt-448" secondAttribute="centerX" id="62d-un-M9L"/>
                             <constraint firstAttribute="trailingMargin" secondItem="R0x-3X-OYz" secondAttribute="trailing" constant="122" id="6Ja-UU-4cj"/>
+                            <constraint firstItem="GAO-Cl-Wes" firstAttribute="top" secondItem="xBg-Uf-tig" secondAttribute="bottom" constant="8" id="7MP-2P-O6d"/>
+                            <constraint firstItem="xBg-Uf-tig" firstAttribute="trailing" secondItem="svH-Pt-448" secondAttribute="trailingMargin" id="7rF-j2-5kY"/>
                             <constraint firstItem="UD7-7H-gQU" firstAttribute="leading" secondItem="svH-Pt-448" secondAttribute="leadingMargin" constant="96" id="9Rv-SR-wCI"/>
                             <constraint firstItem="GAO-Cl-Wes" firstAttribute="top" secondItem="R0x-3X-OYz" secondAttribute="bottom" constant="280" id="CzJ-JS-3GZ"/>
                             <constraint firstItem="UD7-7H-gQU" firstAttribute="top" secondItem="qE6-Rd-Kcw" secondAttribute="bottom" constant="8" id="Gk2-R3-j49"/>
@@ -127,6 +143,7 @@
                             <constraint firstItem="R0x-3X-OYz" firstAttribute="leading" secondItem="svH-Pt-448" secondAttribute="leadingMargin" constant="122" id="NwF-Ct-QqY"/>
                             <constraint firstItem="bac-z1-MFH" firstAttribute="top" secondItem="UD7-7H-gQU" secondAttribute="bottom" constant="8" id="OMJ-HT-xlk"/>
                             <constraint firstAttribute="trailingMargin" secondItem="bac-z1-MFH" secondAttribute="trailing" constant="97" id="SSG-Gg-pCG"/>
+                            <constraint firstItem="6yC-yW-dpY" firstAttribute="top" secondItem="QBX-36-hoY" secondAttribute="bottom" constant="8" id="Vcz-dp-voQ"/>
                             <constraint firstItem="R0x-3X-OYz" firstAttribute="top" secondItem="oSL-6h-wZb" secondAttribute="bottom" constant="8" id="X5e-Dh-ctN"/>
                             <constraint firstItem="zdj-BE-7bZ" firstAttribute="top" secondItem="QBX-36-hoY" secondAttribute="bottom" constant="84" id="XCM-PT-7GB"/>
                             <constraint firstAttribute="trailingMargin" secondItem="oSL-6h-wZb" secondAttribute="trailing" constant="72" id="Yig-up-N6I"/>
@@ -139,15 +156,18 @@
                             <constraint firstItem="zdj-BE-7bZ" firstAttribute="leading" secondItem="FwC-Bp-80e" secondAttribute="trailing" constant="8" id="eeY-6a-jKd"/>
                             <constraint firstItem="oSL-6h-wZb" firstAttribute="top" secondItem="zdj-BE-7bZ" secondAttribute="bottom" constant="8" id="guf-r9-5kR"/>
                             <constraint firstItem="bac-z1-MFH" firstAttribute="leading" secondItem="svH-Pt-448" secondAttribute="leadingMargin" constant="96" id="l9N-Y1-gt2"/>
+                            <constraint firstItem="xBg-Uf-tig" firstAttribute="leading" secondItem="svH-Pt-448" secondAttribute="leadingMargin" id="lAU-15-HGg"/>
                             <constraint firstItem="zdj-BE-7bZ" firstAttribute="leading" secondItem="FwC-Bp-80e" secondAttribute="trailing" constant="8" id="nlz-Sk-7zv"/>
                             <constraint firstItem="QBX-36-hoY" firstAttribute="top" secondItem="SYR-Wa-9uf" secondAttribute="bottom" constant="8" id="pl8-NF-xTU"/>
                             <constraint firstAttribute="trailingMargin" secondItem="UD7-7H-gQU" secondAttribute="trailing" constant="97" id="qdz-SJ-wdB"/>
                             <constraint firstItem="bac-z1-MFH" firstAttribute="top" secondItem="UD7-7H-gQU" secondAttribute="bottom" constant="8" id="rC5-Ol-OSH"/>
                             <constraint firstItem="oSL-6h-wZb" firstAttribute="leading" secondItem="svH-Pt-448" secondAttribute="leadingMargin" constant="71" id="sLI-od-fyZ"/>
+                            <constraint firstItem="6yC-yW-dpY" firstAttribute="leading" secondItem="UD7-7H-gQU" secondAttribute="trailing" constant="8" id="t0d-NX-aqR"/>
                             <constraint firstItem="qE6-Rd-Kcw" firstAttribute="leading" secondItem="svH-Pt-448" secondAttribute="leadingMargin" constant="96" id="uGJ-yD-nD2"/>
                             <constraint firstItem="FwC-Bp-80e" firstAttribute="centerX" secondItem="svH-Pt-448" secondAttribute="centerX" id="udS-LW-N9W"/>
                             <constraint firstItem="FwC-Bp-80e" firstAttribute="top" secondItem="bac-z1-MFH" secondAttribute="bottom" constant="8" id="vVc-6v-2Cx"/>
                             <constraint firstItem="oSL-6h-wZb" firstAttribute="centerX" secondItem="svH-Pt-448" secondAttribute="centerX" id="wXq-6P-XFE"/>
+                            <constraint firstItem="xBg-Uf-tig" firstAttribute="top" secondItem="R0x-3X-OYz" secondAttribute="bottom" constant="8" id="yQC-zR-0ee"/>
                             <constraint firstItem="zdj-BE-7bZ" firstAttribute="top" secondItem="QBX-36-hoY" secondAttribute="bottom" constant="84" id="yf6-Dx-rbn"/>
                             <constraint firstItem="UD7-7H-gQU" firstAttribute="top" secondItem="qE6-Rd-Kcw" secondAttribute="bottom" constant="8" id="zWw-UO-9LD"/>
                         </constraints>
@@ -158,6 +178,7 @@
                         <outlet property="collegeTextField" destination="qE6-Rd-Kcw" id="6dT-Rd-ElI"/>
                         <outlet property="imageView" destination="oSL-6h-wZb" id="Jlf-wH-yAb"/>
                         <outlet property="locationTextField" destination="UD7-7H-gQU" id="AxM-p2-1gr"/>
+                        <outlet property="mapView" destination="xBg-Uf-tig" id="HHC-fK-i7v"/>
                         <outlet property="sizeTextField" destination="bac-z1-MFH" id="bkP-Kb-Cdk"/>
                         <outlet property="websiteTextField" destination="FwC-Bp-80e" id="krI-TP-aSE"/>
                     </connections>
